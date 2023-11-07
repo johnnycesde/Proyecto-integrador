@@ -122,8 +122,8 @@ public class Grupo2View extends VerticalLayout {
             } else {
                 info = "Obesidad Clase 3";
             }
-            String numeroFormateado = String.format("%.2f", imc);
-            salida.setText(String.valueOf(numeroFormateado + ", " + info));
+            // String numeroFormateado = String.format("%.2f", imc);
+            // salida.setText(String.valueOf(numeroFormateado + ", " + info));
         });
         vl2.add(new H3("Calculadora Índice de Masa Corporal (IMC)"));
         vl2.add(peso);

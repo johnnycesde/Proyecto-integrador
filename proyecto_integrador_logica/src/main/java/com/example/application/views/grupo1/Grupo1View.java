@@ -92,11 +92,11 @@ public class Grupo1View extends VerticalLayout {
         gist = "<script src=\"https://gist.github.com/jfinfocesde/e2da562bb64be1b54f461de2cd5c001d.js\"></script>";
         replit = "https://replit.com/@jhonvalencia3/ProyectoPrueba";
         diagrama = "https://firebasestorage.googleapis.com/v0/b/cesde-7fe22.appspot.com/o/Proyecto%20Integrador%2FDiagrama.svg?alt=media&token=e04cad73-fd1c-4972-a571-da1389d04689";
-        add(secciones.algoritmo(titulo1, titulo2, descripcion, algoritmo1(), gist, replit, diagrama));
+        add(secciones.algoritmo(titulo1, titulo2, descripcion, algoritmo(), gist, replit, diagrama));
 
     }
 
-    public HorizontalLayout algoritmo1() {
+    public HorizontalLayout algoritmo() {
 
         VerticalLayout vl1 = new VerticalLayout();
         vl1.setAlignItems(Alignment.CENTER);
@@ -111,19 +111,20 @@ public class Grupo1View extends VerticalLayout {
 
         NumberField velocidad = new NumberField("Velocidad (m)");
         NumberField tiempo = new NumberField("Tiempo (s)");
-        Button calcular = new Button("Distancia");
+        Button calcular = new Button("calcular MRU");
         H3 salida = new H3();
 
         calcular.addClickListener(event -> {
             double valorVelocidad = velocidad.getValue();
             double valorTiempo = tiempo.getValue();
-            double distanci = valorVelocidad / Math.pow(valorTiempo, 2);
+            double  imc = valorVelocidad / Math.pow(valorTiempo, 2);
             String info = "";
             
-            String numeroFormateado = String.format("%.2f", distancia);
-            salida.setText(String.valueOf(numeroFormateado + ", " + info));
+            
+            String numeroFormateado = String.format("%.2f", imc);
+            salida.setText(String.valueOf(numeroFormateado + ", " ));
         });
-        vl2.add(new H3("Calculadora Índice de Masa Corporal (IMC)"));
+        vl2.add(new H3("distancia (IMC)"));
         vl2.add(velocidad);
         vl2.add(tiempo);
         vl2.add(calcular);
