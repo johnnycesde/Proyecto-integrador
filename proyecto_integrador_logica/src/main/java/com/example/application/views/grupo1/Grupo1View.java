@@ -109,23 +109,23 @@ public class Grupo1View extends VerticalLayout {
         hl.setAlignItems(Alignment.CENTER);
         hl.setWidthFull();
 
-        NumberField peso = new NumberField("Peso (kg)");
-        NumberField altura = new NumberField("Altura (m)");
-        Button calcular = new Button("Calcular IMC");
+        NumberField velocidad = new NumberField("Velocidad (m)");
+        NumberField tiempo = new NumberField("Tiempo (s)");
+        Button calcular = new Button("Distancia");
         H3 salida = new H3();
 
         calcular.addClickListener(event -> {
-            double valorPeso = peso.getValue();
-            double valorAltura = altura.getValue();
-            double imc = valorPeso / Math.pow(valorAltura, 2);
+            double valorVelocidad = velocidad.getValue();
+            double valorTiempo = tiempo.getValue();
+            double distanci = valorVelocidad / Math.pow(valorTiempo, 2);
             String info = "";
             
-            String numeroFormateado = String.format("%.2f", imc);
+            String numeroFormateado = String.format("%.2f", distancia);
             salida.setText(String.valueOf(numeroFormateado + ", " + info));
         });
         vl2.add(new H3("Calculadora Índice de Masa Corporal (IMC)"));
-        vl2.add(peso);
-        vl2.add(altura);
+        vl2.add(velocidad);
+        vl2.add(tiempo);
         vl2.add(calcular);
         vl2.add(salida);
         hl.add(vl1);
