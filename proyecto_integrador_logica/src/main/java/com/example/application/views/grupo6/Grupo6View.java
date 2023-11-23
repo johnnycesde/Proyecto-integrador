@@ -87,11 +87,13 @@ public class Grupo6View extends VerticalLayout {
 
         // Algoritmo2
         titulo1 = "Algoritmo 2";
-        titulo2 = "Calculadora movimiento rectilíneo uniforme)";
-        descripcion = "(MRU) es un tipo de movimiento en el cual un objeto se mueve en línea recta y a velocidad constante, es decir, su velocidad no cambia en el tiempo. En este tipo de movimiento, la trayectoria del objeto es una línea recta, por lo que su aceleración es cero.";
+        titulo2 = "Calculadora cientifica de (sumas,resta,multiplicacion ,division,seno,coseno,algoritmo natural)";
+        descripcion = " Calculadora científica.\r\n" + //
+                "En esta calculadora,  puedes hacer varias operaciones , como sumas , restas ,multiplicaciones, divisiones ,logaritmo natural ,seno ,cosenos. \r\n" + //
+                ".";
         gist = "<script src=\"https://gist.github.com/johnnycesde/a07a3d208519ff9ad5211c3d91029d3a.js\"></script>";
         replit = "https://replit.com/@johnnylondono/CalculadoraOro2#Main.java\r\n";
-        diagrama = "https://firebasestorage.googleapis.com/v0/b/cesde-alumno.appspot.com/o/DiaGramcalculoro.svg?alt=media&token=bff807d7-ae98-4612-8fde-5f9f44a4145e&_gl=1*x6vuz9*_ga*MjA2Mzk1NTEyNi4xNjk0NzM4NTM1*_ga_CW55HF8NVT*MTY5Nzc1NjMwOS4xMS4xLjE2OTc3NTYzMzQuMzUuMC4w";
+        diagrama = "https://firebasestorage.googleapis.com/v0/b/cesde-alumno.appspot.com/o/diagramacalculadoracientifica.png?alt=media&token=fd5a0acc-3a4f-4115-9f83-de3acdd53a2a";
         add(secciones.algoritmo(titulo1, titulo2, descripcion, algoritmo2(), gist, replit, diagrama));
 
     }
@@ -138,7 +140,7 @@ public class Grupo6View extends VerticalLayout {
 
         VerticalLayout vl1 = new VerticalLayout();
         vl1.setAlignItems(Alignment.CENTER);
-        vl1.add(new Image("https://oroinformacion.com/wp-content/uploads/images/cms-image-000002163.jpg", ""));
+        vl1.add(new Image("https://firebasestorage.googleapis.com/v0/b/cesde-alumno.appspot.com/o/imag%2Ccalculadoracientifica-fotor-20231123115915.png?alt=media&token=1603e529-ca33-4f33-bd99-bdb4b31cda4f", ""));
 
         VerticalLayout vl2 = new VerticalLayout();
         vl2.setAlignItems(Alignment.CENTER);
